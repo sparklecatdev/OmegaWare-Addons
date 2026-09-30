@@ -1,6 +1,9 @@
 name: Publish Development Build
 on: push
 
+permissions:
+  contents: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -32,7 +35,7 @@ jobs:
       - name: Release
         uses: marvinpinto/action-automatic-releases@latest
         with:
-          repo_token: '${{ secrets.PAT_TOKEN }}'
+          repo_token: '${{ github.token }}'
           automatic_release_tag: snapshot-v${{ steps.get_version.outputs.mod_version }}
           prerelease: true
           title: Dev Build
