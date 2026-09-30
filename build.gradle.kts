@@ -1,8 +1,8 @@
 plugins {
-    id("fabric-loom") version "1.10-SNAPSHOT"
+    id("fabric-loom") version "1.18.2"
 }
 
-val targetVersion = findProperty("target_version") as String? ?: "1_21_4"
+val targetVersion = findProperty("target_version") as String? ?: "1_21_11"
 val minecraftVersion = properties["minecraft_version_$targetVersion"] as String
 val yarnMappings = properties["yarn_mappings_$targetVersion"] as String
 val loaderVersion = properties["loader_version_$targetVersion"] as String

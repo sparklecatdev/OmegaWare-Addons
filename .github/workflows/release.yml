@@ -29,7 +29,7 @@ jobs:
               run: |
                   mod_version=$(grep "^mod_version=" gradle.properties | cut -d'=' -f2)
                   echo "mod_version=$mod_version" >> $GITHUB_OUTPUT
-                  echo "mc_version=1.21.4" >> $GITHUB_OUTPUT
+                  echo "mc_version=1.21.11" >> $GITHUB_OUTPUT
 
             - name: Create GitHub Release Draft
               uses: softprops/action-gh-release@v2

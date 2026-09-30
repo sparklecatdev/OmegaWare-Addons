@@ -1,5 +1,7 @@
 # OmegaWare Addons (For Meteor Client)
 
+This branch targets Minecraft 1.21.11 and the matching Meteor Client development build.
+
 ## Features
 - **TPA Automations**:
   - Automatically accepts teleport requests from approved users.
